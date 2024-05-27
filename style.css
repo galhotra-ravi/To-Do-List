@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: beige;
+}
+
+@media (min-width: 800px){
+    .input-container{
+        max-width: 650px;
+    }
+}
+
+@media (max-width: 600px) {
+    .taskDiv{
+        max-width: 300px;
+        max-height: 30px;
+    }
+
+    .taskEditDiv{
+        min-width: 320px;
+        top: 18% !important;
+        left: 15% !important;
+    }
+
+    .taskEditDiv input{
+        margin-left: 25px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .taskDiv{
+        max-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .taskClose{
+        right: 30px !important;
+    }
+    .taskEdit{
+        right: 60px !important;
+    }
+}
+
+.input-container{
+    height: 100px;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 40px;    
+    width: 50%;
+    font-size: 1.2rem;
+    padding-inline: 10px;
+    outline: none;
+    border: 1px solid black;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+button{
+    height: 42px;
+    width: 80px;
+    font-size: 1.2rem;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+button:hover{
+    background-color: #e9e8e8;
+    cursor: pointer;
+}
+
+.taskDiv{
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    /* font-size: 1.5rem; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 25px;
+    overflow-x: auto;
+    position: relative;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+
+.taskEdit, .taskClose, .taskComplete {
+    font-size: 3vmin;
+}
+
+.taskText{
+    font-size: 2vmax;
+}
+
+.taskDivComplete{
+    height: 50px;
+    width: 50px;
+    /* background-color: rgb(234, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+
+.taskDivComplete:hover{
+    cursor: pointer;
+}
+
+.taskClose{
+    height: 50px;
+    width: 50px;
+    /* background-color: rgb(234, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 50px;
+}
+
+.taskClose:hover{
+    cursor: pointer;
+}
+
+.CompleteEffect{
+    background-color: #00d26a;
+}
+
+.taskEdit{
+    height: 50px;
+    width: 50px;
+    /* background-color: rgb(234, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 100px;
+}
+
+.taskEdit:hover{
+    cursor: pointer;
+}
+
+.taskEditDiv{
+    height: 200px;
+    width: 50%;
+    background-color: beige;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
