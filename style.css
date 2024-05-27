@@ -25,8 +25,8 @@ body{
 
     .taskEditDiv{
         min-width: 320px;
-        top: 18% !important;
-        left: 15% !important;
+        top: 20% !important;
+        left: 12% !important;
     }
 
     .taskEditDiv input{
